@@ -65,19 +65,19 @@ ingress:
     kubernetes.io/tls-acme: "true"
     cert-manager.io/cluster-issuer: "letsencrypt-internal"
 
-  path: /
-  pathType: Prefix
-
   hosts:
-    - "dev-internal-artemis.dianaassw.com"
+    - host: "dev-internal-artemis.dianaassw.com"
+      paths:
+        - path: /
+          pathType: Prefix
 
   tls:
     - secretName: dev-artemis-tls
       hosts:
-      - "dev-internal-artemis.dianaassw.com"
+        - "dev-internal-artemis.dianaassw.com"
 
   extraPaths: []
-
+  
 # -- Expose the service via gateway-api HTTPRoute
 # Requires Gateway API resources and suitable controller installed within the cluster
 # (see: https://gateway-api.sigs.k8s.io/guides/)
