@@ -66,7 +66,7 @@ ingress:
     cert-manager.io/cluster-issuer: "letsencrypt-internal"
 
   hosts:
-    - host: "dev-internal-artemis.dianaassw.com"
+    - host: "dev-internal-artemis.dianaasww.com"
       paths:
         - path: /
           pathType: Prefix
@@ -74,7 +74,7 @@ ingress:
   tls:
     - secretName: dev-artemis-tls
       hosts:
-        - "dev-internal-artemis.dianaassw.com"
+        - "dev-internal-artemis.dianaasww.com"
 
   extraPaths: []
 
