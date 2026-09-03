@@ -69,12 +69,12 @@ ingress:
   pathType: Prefix
 
   hosts:
-    - "dev-internal-grafana.dianaassw.com"
+    - "dev-internal-artemis.dianaassw.com"
 
   tls:
-    - secretName: dev-grafana-tls
+    - secretName: dev-artemis-tls
       hosts:
-      - "dev-internal-grafana.dianaassw.com"
+      - "dev-internal-artemis.dianaassw.com"
 
   extraPaths: []
 
