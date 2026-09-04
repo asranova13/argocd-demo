@@ -27,8 +27,10 @@ serviceAccount:
   annotations: {}
   name: ""
 
+# Pod labels
 podLabels: {}
 
+# Security contexts
 podSecurityContext: {}
 
 securityContext: {}
@@ -41,10 +43,10 @@ service:
 # QA Ingress
 ingress:
   enabled: true
-  className: "internal-nginx"
+  className: "nginx"
 
   annotations:
-    kubernetes.io/ingress.class: internal-nginx
+    kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
 
@@ -80,10 +82,10 @@ httpRoute:
             type: PathPrefix
             value: /headers
 
-# Resource requests/limits
+# Resource requests and limits
 resources: {}
 
-# Probes are disabled for now
+# Probes disabled for now
 # livenessProbe:
 #   httpGet:
 #     path: /
