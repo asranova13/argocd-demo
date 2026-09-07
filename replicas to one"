@@ -1,0 +1,52 @@
+[1mdiff --git a/envs/dev/values.yaml b/envs/dev/values.yaml[m
+[1mindex 38ecec4..4d67be5 100644[m
+[1m--- a/envs/dev/values.yaml[m
+[1m+++ b/envs/dev/values.yaml[m
+[36m@@ -3,7 +3,7 @@[m
+ # Declare variables to be passed into your templates.[m
+ [m
+ # This will set the replicaset count more information can be found here: https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/[m
+[31m-replicaCount: 2[m
+[32m+[m[32mreplicaCount: 1[m
+ [m
+ # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/[m
+ podAnnotations:[m
+[1mdiff --git a/envs/prod/values.yaml b/envs/prod/values.yaml[m
+[1mindex ae0b4e2..5e92145 100644[m
+[1m--- a/envs/prod/values.yaml[m
+[1m+++ b/envs/prod/values.yaml[m
+[36m@@ -1,7 +1,7 @@[m
+ # Default values for application.[m
+ # Production environment values for Artemis.[m
+ [m
+[31m-replicaCount: 2[m
+[32m+[m[32mreplicaCount: 1[m
+ [m
+ # Prometheus scraping[m
+ podAnnotations:[m
+[1mdiff --git a/envs/qa/values.yaml b/envs/qa/values.yaml[m
+[1mindex 3f7695e..b6136d6 100644[m
+[1m--- a/envs/qa/values.yaml[m
+[1m+++ b/envs/qa/values.yaml[m
+[36m@@ -1,7 +1,7 @@[m
+ # Default values for application.[m
+ # QA environment values for Artemis.[m
+ [m
+[31m-replicaCount: 2[m
+[32m+[m[32mreplicaCount: 1[m
+ [m
+ # Prometheus scraping[m
+ podAnnotations:[m
+[1mdiff --git a/envs/stage/values.yaml b/envs/stage/values.yaml[m
+[1mindex e61c96d..d17edd6 100644[m
+[1m--- a/envs/stage/values.yaml[m
+[1m+++ b/envs/stage/values.yaml[m
+[36m@@ -1,7 +1,7 @@[m
+ # Default values for application.[m
+ # Stage environment values for Artemis.[m
+ [m
+[31m-replicaCount: 2[m
+[32m+[m[32mreplicaCount: 1[m
+ [m
+ # Prometheus scraping[m
+ podAnnotations:[m
