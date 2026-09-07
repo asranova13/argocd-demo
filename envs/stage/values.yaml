@@ -1,7 +1,7 @@
 # Default values for application.
 # Stage environment values for Artemis.
 
-replicaCount: 2
+replicaCount: 1
 
 # Prometheus scraping
 podAnnotations:
